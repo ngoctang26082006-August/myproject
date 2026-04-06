@@ -1,44 +1,117 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <title>Thiết kế web với HTML</title>
-
+    <meta charset="UTF-8">
+    <title>Trang thông tin cá nhân - Tăng Kiều Ngọc</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
         }
 
+        /* Khung bao ngoài cùng */
+        .container {
+            border: 1px solid #000;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Phần giới thiệu có khung và ảnh nằm ngang */
+        .intro-box {
+            display: flex;
+            border: 1px solid #999;
+            padding: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .intro-box img {
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+
+        .intro-text h4 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        /* Định dạng bảng */
         table {
+            width: 300px;
             border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
         }
 
         th, td {
             padding: 8px;
+            text-align: left;
         }
 
-        th {
-            background-color: #ddd;
+        h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
         }
-    </style>
+
+        /* Link liên hệ */
+        .contact-link {
+            color: blue;
+            text-decoration: underline;
+        } 
 </head>
 
 <body>
 
-    <h1>Trang thông tin cá nhân</h1>
+<h2>Thông tin chi tiết</h2>
 
-    <h1>Tăng Kiều Ngọc</h1>
-    <h2>Xin chào! Đây là trang web cá nhân của tôi</h2>
+<table class="info-table">
+    <tr>
+        <th>Thông tin</th>
+        <th>Nội dung</th>
+    </tr>
+    <tr>
+        <td>Họ và tên</td>
+        <td>Tăng Kiều Ngọc</td>
+    </tr>
+    <tr>
+        <td>Tuổi</td>
+        <td>20</td>
+    </tr>
+</table>
 
-    <h3>Giới thiệu bản thân</h3>
+</body>
+</html> 
+</head>
 
-    <p>
-        Tôi tên là <b>Tăng Kiều Ngọc</b>, năm nay <b>20 tuổi</b>, hiện đang học lớp <b>DA24TTC</b>.
-        Tôi đang theo học ngành <b>Công nghệ thông tin</b> tại <b>Đại học Trà Vinh</b>.
-    </p>
-
-    <p>
+<body>
+      <div class="container">
+    <h1>TĂNG KIỀU NGỌC</h1>
+    <span class="sub-title">Trang thông tin cá nhân</span>
+	<div class="intro-text">
+            <h4>Giới thiệu bản thân</h4>
+            <p>Xin chào! Tôi là <strong>Tăng Kiều Ngọc</strong>, sinh viên lớp <strong>DA24TTC</strong> tại <strong>Đại học Trà Vinh</strong>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một <i>lập trình viên chuyên nghiệp</i>. Tôi luôn cố gắng học tập và phát triển kỹ năng mỗi ngày.</p>
+        </div>
+		
+	
         <i>Mục tiêu của tôi là trở thành lập trình viên web</i> và phát triển sự nghiệp trong lĩnh vực công nghệ.
         Tôi luôn cố gắng học hỏi và <u>không ngừng phát triển bản thân</u>.
     </p>
@@ -47,23 +120,8 @@
   <img src="avatar.jpg" width="200" alt="Ảnh cá nhân">
       <h2>Thông tin thêm</h2>
 
-    <h3>Sở thích</h3>
-    <ul>
-        <li>Nghe nhạc BLACKPINK</li>
-        <li>Chơi cầu lông</li>
-        <li>Đọc sách</li>
-    </ul>
-
-    <h3>Kỹ năng</h3>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-
-    <h2>Thông tin chi tiết</h2>
-
-    <table border="1">
+    <h4>Thông tin chi tiết</h4>
+    <table>
         <tr>
             <th>Thông tin</th>
             <th>Nội dung</th>
@@ -71,10 +129,6 @@
         <tr>
             <td>Họ và tên</td>
             <td>Tăng Kiều Ngọc</td>
-        </tr>
-        <tr>
-            <td>Tuổi</td>
-            <td>20</td>
         </tr>
         <tr>
             <td>Lớp</td>
@@ -85,6 +139,512 @@
             <td>Đại học Trà Vinh</td>
         </tr>
     </table>
+
+    <h4>Sở thích</h4>
+    <ul>
+        <li>Nghe nhạc BLACKPINK</li>
+        <li>Chơi cầu lông</li>
+        <li>Đọc sách</li>
+    </ul>
+
+    <h4>Kỹ năng và mục tiêu</h4>
+    <ol>
+        <li>Biết HTML cơ bản</li>
+        <li>Đang học CSS và JavaScript</li>
+        <li>Hoàn thành wed cá nhân </li>
+    </ol>
+
+    <h4>Liên hệ</h4>
+    <p>Facebook: <a href="https://facebook.com/your-profile" class="contact-link" target="_blank">Trang Facebook của tôi</a></p>
+    <p>Email: <a href="mailto:ngoctang26082006@gmail.com" class="contact-link">ngoctang26082006@gmail.com</a></p>
+    <p>SĐT: <a href="tel:0345596081" class="contact-link">0345 596 081</a></p>
+</div>
+
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang thông tin cá nhân - Tăng Kiều Ngọc</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Khung bao ngoài cùng */
+        .container {
+            border: 1px solid #000;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Phần giới thiệu có khung và ảnh nằm ngang */
+        .intro-box {
+            display: flex;
+            border: 1px solid #999;
+            padding: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .intro-box img {
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+
+        .intro-text h4 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        /* Định dạng bảng */
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Link liên hệ */
+        .contact-link {
+            color: blue;
+            text-decoration: underline;
+        } 
+</head>
+
+<body>
+
+<h2>Thông tin chi tiết</h2>
+
+<table class="info-table">
+    <tr>
+        <th>Thông tin</th>
+        <th>Nội dung</th>
+    </tr>
+    <tr>
+        <td>Họ và tên</td>
+        <td>Tăng Kiều Ngọc</td>
+    </tr>
+    <tr>
+        <td>Tuổi</td>
+        <td>20</td>
+    </tr>
+</table>
+
+</body>
+</html> 
+</head>
+
+<body>
+      <div class="container">
+    <h1>TĂNG KIỀU NGỌC</h1>
+    <span class="sub-title">Trang thông tin cá nhân</span>
+	<div class="intro-text">
+            <h4>Giới thiệu bản thân</h4>
+            <p>Xin chào! Tôi là <strong>Tăng Kiều Ngọc</strong>, sinh viên lớp <strong>DA24TTC</strong> tại <strong>Đại học Trà Vinh</strong>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một <i>lập trình viên chuyên nghiệp</i>. Tôi luôn cố gắng học tập và phát triển kỹ năng mỗi ngày.</p>
+        </div>
+		
+	
+        <i>Mục tiêu của tôi là trở thành lập trình viên web</i> và phát triển sự nghiệp trong lĩnh vực công nghệ.
+        Tôi luôn cố gắng học hỏi và <u>không ngừng phát triển bản thân</u>.
+    </p>
+
+    <h2>Hình ảnh cá nhân</h2>
+  <img src="avatar.jpg" width="200" alt="Ảnh cá nhân">
+      <h2>Thông tin thêm</h2>
+
+    <h4>Thông tin chi tiết</h4>
+    <table>
+        <tr>
+            <th>Thông tin</th>
+            <th>Nội dung</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td>Tăng Kiều Ngọc</td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>DA24TTC</td>
+        </tr>
+        <tr>
+            <td>Trường</td>
+            <td>Đại học Trà Vinh</td>
+        </tr>
+    </table>
+
+    <h4>Sở thích</h4>
+    <ul>
+        <li>Nghe nhạc BLACKPINK</li>
+        <li>Chơi cầu lông</li>
+        <li>Đọc sách</li>
+    </ul>
+
+    <h4>Kỹ năng và mục tiêu</h4>
+    <ol>
+        <li>Biết HTML cơ bản</li>
+        <li>Đang học CSS và JavaScript</li>
+        <li>Hoàn thành wed cá nhân </li>
+    </ol>
+
+    <h4>Liên hệ</h4>
+    <p>Facebook: <a href="https://facebook.com/your-profile" class="contact-link" target="_blank">Trang Facebook của tôi</a></p>
+    <p>Email: <a href="mailto:ngoctang26082006@gmail.com" class="contact-link">ngoctang26082006@gmail.com</a></p>
+    <p>SĐT: <a href="tel:0345596081" class="contact-link">0345 596 081</a></p>
+</div>
+
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang thông tin cá nhân - Tăng Kiều Ngọc</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Khung bao ngoài cùng */
+        .container {
+            border: 1px solid #000;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Phần giới thiệu có khung và ảnh nằm ngang */
+        .intro-box {
+            display: flex;
+            border: 1px solid #999;
+            padding: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .intro-box img {
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+
+        .intro-text h4 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        /* Định dạng bảng */
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Link liên hệ */
+        .contact-link {
+            color: blue;
+            text-decoration: underline;
+        } 
+</head>
+
+<body>
+
+<h2>Thông tin chi tiết</h2>
+
+<table class="info-table">
+    <tr>
+        <th>Thông tin</th>
+        <th>Nội dung</th>
+    </tr>
+    <tr>
+        <td>Họ và tên</td>
+        <td>Tăng Kiều Ngọc</td>
+    </tr>
+    <tr>
+        <td>Tuổi</td>
+        <td>20</td>
+    </tr>
+</table>
+
+</body>
+</html> 
+</head>
+
+<body>
+      <div class="container">
+    <h1>TĂNG KIỀU NGỌC</h1>
+    <span class="sub-title">Trang thông tin cá nhân</span>
+	<div class="intro-text">
+            <h4>Giới thiệu bản thân</h4>
+            <p>Xin chào! Tôi là <strong>Tăng Kiều Ngọc</strong>, sinh viên lớp <strong>DA24TTC</strong> tại <strong>Đại học Trà Vinh</strong>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một <i>lập trình viên chuyên nghiệp</i>. Tôi luôn cố gắng học tập và phát triển kỹ năng mỗi ngày.</p>
+        </div>
+		
+	
+        <i>Mục tiêu của tôi là trở thành lập trình viên web</i> và phát triển sự nghiệp trong lĩnh vực công nghệ.
+        Tôi luôn cố gắng học hỏi và <u>không ngừng phát triển bản thân</u>.
+    </p>
+
+    <h2>Hình ảnh cá nhân</h2>
+  <img src="avatar.jpg" width="200" alt="Ảnh cá nhân">
+      <h2>Thông tin thêm</h2>
+
+    <h4>Thông tin chi tiết</h4>
+    <table>
+        <tr>
+            <th>Thông tin</th>
+            <th>Nội dung</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td>Tăng Kiều Ngọc</td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>DA24TTC</td>
+        </tr>
+        <tr>
+            <td>Trường</td>
+            <td>Đại học Trà Vinh</td>
+        </tr>
+    </table>
+
+    <h4>Sở thích</h4>
+    <ul>
+        <li>Nghe nhạc BLACKPINK</li>
+        <li>Chơi cầu lông</li>
+        <li>Đọc sách</li>
+    </ul>
+
+    <h4>Kỹ năng và mục tiêu</h4>
+    <ol>
+        <li>Biết HTML cơ bản</li>
+        <li>Đang học CSS và JavaScript</li>
+        <li>Hoàn thành wed cá nhân </li>
+    </ol>
+
+    <h4>Liên hệ</h4>
+    <p>Facebook: <a href="https://facebook.com/your-profile" class="contact-link" target="_blank">Trang Facebook của tôi</a></p>
+    <p>Email: <a href="mailto:ngoctang26082006@gmail.com" class="contact-link">ngoctang26082006@gmail.com</a></p>
+    <p>SĐT: <a href="tel:0345596081" class="contact-link">0345 596 081</a></p>
+</div>
+
+                     <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang thông tin cá nhân - Tăng Kiều Ngọc</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Khung bao ngoài cùng */
+        .container {
+            border: 1px solid #000;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Phần giới thiệu có khung và ảnh nằm ngang */
+        .intro-box {
+            display: flex;
+            border: 1px solid #999;
+            padding: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .intro-box img {
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+
+        .intro-text h4 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        /* Định dạng bảng */
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Link liên hệ */
+        .contact-link {
+            color: blue;
+            text-decoration: underline;
+        } 
+</head>
+
+<body>
+
+<h2>Thông tin chi tiết</h2>
+
+<table class="info-table">
+    <tr>
+        <th>Thông tin</th>
+        <th>Nội dung</th>
+    </tr>
+    <tr>
+        <td>Họ và tên</td>
+        <td>Tăng Kiều Ngọc</td>
+    </tr>
+    <tr>
+        <td>Tuổi</td>
+        <td>20</td>
+    </tr>
+</table>
+
+</body>
+</html> 
+</head>
+
+<body>
+      <div class="container">
+    <h1>TĂNG KIỀU NGỌC</h1>
+    <span class="sub-title">Trang thông tin cá nhân</span>
+	<div class="intro-text">
+            <h4>Giới thiệu bản thân</h4>
+            <p>Xin chào! Tôi là <strong>Tăng Kiều Ngọc</strong>, sinh viên lớp <strong>DA24TTC</strong> tại <strong>Đại học Trà Vinh</strong>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một <i>lập trình viên chuyên nghiệp</i>. Tôi luôn cố gắng học tập và phát triển kỹ năng mỗi ngày.</p>
+        </div>
+		
+	
+        <i>Mục tiêu của tôi là trở thành lập trình viên web</i> và phát triển sự nghiệp trong lĩnh vực công nghệ.
+        Tôi luôn cố gắng học hỏi và <u>không ngừng phát triển bản thân</u>.
+    </p>
+
+    <h2>Hình ảnh cá nhân</h2>
+  <img src="avatar.jpg" width="200" alt="Ảnh cá nhân">
+      <h2>Thông tin thêm</h2>
+
+    <h4>Thông tin chi tiết</h4>
+    <table>
+        <tr>
+            <th>Thông tin</th>
+            <th>Nội dung</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td>Tăng Kiều Ngọc</td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>DA24TTC</td>
+        </tr>
+        <tr>
+            <td>Trường</td>
+            <td>Đại học Trà Vinh</td>
+        </tr>
+    </table>
+
+    <h4>Sở thích</h4>
+    <ul>
+        <li>Nghe nhạc BLACKPINK</li>
+        <li>Chơi cầu lông</li>
+        <li>Đọc sách</li>
+    </ul>
+
+    <h4>Kỹ năng và mục tiêu</h4>
+    <ol>
+        <li>Biết HTML cơ bản</li>
+        <li>Đang học CSS và JavaScript</li>
+        <li>Hoàn thành wed cá nhân </li>
+    </ol>
+
+    <h4>Liên hệ</h4>
+    <p>Facebook: <a href="https://facebook.com/your-profile" class="contact-link" target="_blank">Trang Facebook của tôi</a></p>
+    <p>Email: <a href="mailto:ngoctang26082006@gmail.com" class="contact-link">ngoctang26082006@gmail.com</a></p>
+    <p>SĐT: <a href="tel:0345596081" class="contact-link">0345 596 081</a></p>
+</div>
 
 </body>
 </html>
